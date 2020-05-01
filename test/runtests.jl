@@ -1,5 +1,7 @@
 using Base.Test
 using AutomotiveDrivingModels
+using AutoViz
+using NBInclude
 
-Pkg.test("AutomotiveDrivingModels.jl")
 
+@nbinclude(Pkg.dir("AutoViz", "doc", "AutoViz.ipynb"))
